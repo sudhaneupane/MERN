@@ -145,3 +145,35 @@ if (!a) {
 
 
 // JavaScript is dynamic language because a variable can be stored different value at a different time.
+
+
+// loops
+// while loop
+// do while loop
+
+/* let i;      // Initialization
+
+for(i=0;i<2;i++){    // Initialization,Condition and Incrementor or Decrementor
+    console.log(i);
+} */
+// Initialization only runs at first
+// Condition runs until it meets its requirement
+// Loop body is also executed everytime if condition is true
+// For loop runs until a specified condition evaluates to zero
+
+
+// while loop
+/* let i=0;
+while(i<3){
+    console.log(i);
+    i=i+1;
+} */
+// if the condition becomes false statement within the loop stops executing
+
+let i=0;
+do{
+    console.log(i);
+    i=i+1;
+}while(i<2)
+
+// statement is always executed once before the condition is executed.
