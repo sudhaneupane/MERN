@@ -32,7 +32,36 @@
 
 // sort method sorts from ascending to descending
 // doesnt sort integers
-let list=['d','e','z','h','a','t',"A",'g']
-    // list=['Sudha',"sumi",'A']
-list.sort()
-console.log(list);
+// let list=['d','e','z','h','a','t',"A",'g']
+//     // list=['Sudha',"sumi",'A']
+// list.sort()
+// console.log(list);
+
+
+// slice
+// let l=[1,2,3,4]
+// let newl=l.slice(2)
+// let anotherl=l.slice(-1)  //can be used to get last value
+// console.log(newl);
+// console.log(anotherl);
+
+// reduce
+// find the sum of all elements of array
+// let list=[1,2,3,4]
+// let newlist=list.reduce((pre,cur)=>{
+//     return pre+cur
+// },1)
+// console.log(newlist);
+
+
+// find the sum of all even elements of an array
+// let arr=[1,2,3,5,8,10]
+// let filterell=arr.filter((value,index)=>{
+//     if(value%2===0)
+//         return true
+//     else return false
+// })
+// let redval=filterell.reduce((pre,cur)=>{
+//     return pre+cur
+// },0)
+// console.log(redval)
