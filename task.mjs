@@ -69,26 +69,60 @@ let a = (age) => {
 };
 a(25);
 
-
 // make an aroow function named Sum,pass 2 inputs and it must return the sum of num1 and num2 is num3
-let Sum=(num1,num2)=>{
-    let num3=`The sum is ${num1+num2}`
-    console.log(num3);
-}
-Sum(8,6)
-
+let Sum = (num1, num2) => {
+  let num3 = `The sum is ${num1 + num2}`;
+  console.log(num3);
+};
+Sum(8, 6);
 
 // make an arrow function ,pass array of fruits , the function must return "The fruit contain apple" if the array contain apple.
 // else return "the fruit doesnt contain apple"
-let f1=(fruits)=>{
-    if (fruits.includes("apple")) {
-        console.log(`The fruit contain apple`); 
-    }
-    else{
-        console.log("The fruit doesnot contain apple");
-    }
+let f1 = (fruits) => {
+  if (fruits.includes("apple")) {
+    console.log(`The fruit contain apple`);
+  } else {
+    console.log("The fruit doesnot contain apple");
+  }
+};
+f1(["apple", "mango", "orange"]);
 
-}
-f1(["apple","mango","orange"])
+// number sort
+let l = [1, 5, 8, 3, 6, 9, 4];
+let output = l.sort((a, b) => {
+  return b - a;
+});
+console.log(output);
+
+// length sort
+const s = ["ram", "ramesh", "hari", "javascript", "ax", "john"];
+let ss = s.sort((a, b) => {
+  return a.length - b.length;
+});
+console.log(ss);
+
+// convert object into array
+let info = {
+  name: "ram",
+  age: 30,
+  isMarried: false,
+};
+let keysArray = Object.keys(info);
+console.log(keysArray);
+
+let valueArray = Object.values(info);
+console.log(valueArray);
+
+let propertyArray = Object.entries(info);
+console.log(propertyArray);
+
+// convert array into object
+let listOfArray = [
+  ["name", "ram"],
+  ["age", 30],
+  ["isMarried", false],
+];
+let o = Object.fromEntries(listOfArray);
+console.log(o);
 
 
