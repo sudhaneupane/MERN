@@ -65,3 +65,26 @@
 //     return pre+cur
 // },0)
 // console.log(redval)
+
+
+// const li=[2,4,8,6,1,8]
+// const li1=li.reduce((pre,cur)=>{
+//     return pre*cur
+// })
+
+// console.log(li1);
+
+// const fil1=[2,7,8,5]
+// const fil2=fil1.filter((value,index)=>{
+//     return index
+// })
+// console.log(fil2);
+
+let obj={name:"sudha",
+    color:'black',
+    address:{
+        country:"Nepal",
+        provience:'bagmati'
+    },
+}
+console.log(obj.address.provience);
