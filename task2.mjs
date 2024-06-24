@@ -53,16 +53,26 @@ const products = [
   },
 ];
 
-let output = products.filter((value, index) => {
-  if (value.price >= 2000) {
-    return value;
-  }
-});
-console.log(output);
+// let output = products.filter((value, index) => {
+//   if (value.price >= 2000) {
+//     return value;
+//   }
+// });
+// console.log(output);
 
-let desiredOutput = output.map((value, index) => {
-  console.log(
-    `${value.title} costs ${value.price} ${value.description} Category is ${value.category} `
-  );
-});
+// let desiredOutput = output.map((value, index) => {
+//   console.log(
+//     `${value.title} costs ${value.price}. Category is ${value.category}. ${value.description}  `
+//   );
+// });
 // console.log(desiredOutput);
+
+let output = products
+  .filter((value, index) => {
+    return value.price > 2000;
+  })
+  .map((value, index) => {
+    console.log(
+      `${value.title} costs ${value.price} and its category is ${value.category}`
+    );
+  });
