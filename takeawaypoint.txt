@@ -1,0 +1,14 @@
+Git:
+git add .
+git commit -m "message"
+git push origin BRANCHNAME
+and open the first link of terminal and merge twice after every push(To main)
+
+Always git add and commit before pushing,pulling,switching and creating branch
+
+Git pull origin main for every pull after cloning the project.
+
+GIT BRANCH:
+git checkout -b BRANCHNAME (create branch)
+git checkout BRANCHNAME (switch branch)
+git branch (to see branch name list)
