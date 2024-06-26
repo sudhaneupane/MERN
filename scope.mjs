@@ -68,3 +68,29 @@ let info2={...info,location:"kathmandu"}
 console.log(info2);
 
 
+// scope chaining =>{{{}}}
+  if (true){
+    let a=1;
+    // parent block
+    if(true){
+        let a=5
+        // child block
+        if(true){
+            let a=6;
+            // grand child block
+            console.log(a);
+        }
+    }
+}
+
+// lexical scope => It is a scope of a parent. (only parent)
+
+// setTimeout
+// setTimeout(f1,delaytime)
+console.log("a");
+setTimeout(()=>{
+    console.log("This is set timeout");
+},1000)
+console.log("b");
+// setTimeout function will get execute at last.
+
