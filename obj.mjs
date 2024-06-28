@@ -71,7 +71,6 @@ info.fullName() */
 // let[a,b,c="Venus"]=planet   //here c is a default value
 // console.log(a,b,c);
 
-
 // Spread Operator=> ...
 
 // let planet=["sun","moon","earth"]
@@ -79,7 +78,75 @@ info.fullName() */
 // console.log(planet1);
 // console.log(rest);
 
-let name=["ram",'shyam','hari']
-let data=['school','kathmandu','nepal']
-let totalData=['this is a data ',...data,...name]
+let name = ["ram", "shyam", "hari"];
+let data = ["school", "kathmandu", "nepal"];
+let totalData = ["this is a data ", ...data, ...name];
 console.log(totalData);
+
+// Optional Chaining
+let user = [
+  {
+    name: "anish",
+    location: {
+      country: "Nepal",
+      city: "Ktm",
+    },
+  },
+  {
+    name: "Samir",
+  },
+  {
+    name: "rijan",
+    location: {
+      country: "china",
+      city: "tmk",
+    },
+  },
+];
+user.forEach((value, index) => {
+  console.log(value.location?.city);
+});
+
+let info = {
+  name: "Ram",
+  age: 20,
+  locaton: "ktm",
+};
+
+// get
+console.log(info.age);
+console.log(info.name);
+
+// set
+info.name = "radha";
+console.log(info.name);
+
+// delete
+delete info.age;
+console.log(info);
+
+let data1 = {
+  name: "hari",
+  favFruits: ["apple", "watermelon", "papaya"],
+  location: {
+    city: "ktm",
+    country: "nepal",
+    village: "china",
+  },
+  age: () => {
+    console.log("my name is hari");
+  },
+};
+console.log(data1.name);
+console.log(data1.favFruits[2]);
+data1.age();
+
+let data2 = {
+  firstName: "ram",
+  middleName: "prasad",
+  lastName: "regmi",
+  fullName() {
+    console.log(this.firstName, this.middleName, this.lastName);
+  },
+};
+data2.fullName();
